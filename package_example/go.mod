@@ -1,3 +1,3 @@
-module github.com/learning-go-book-2e/package_example
+module github.com/Prashant20nov2003/package_example
 
 go 1.19

@@ -1,3 +1,3 @@
-module github.com/learning-go-book-2e/money
+module github.com/Prashant20nov2003/money
 
 go 1.21

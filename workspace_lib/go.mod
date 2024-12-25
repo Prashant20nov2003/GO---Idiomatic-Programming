@@ -1,3 +1,3 @@
-module github.com/learning-go-book-2e/workspace_lib
+module github.com/Prashant20nov2003/workspace_lib
 
 go 1.19

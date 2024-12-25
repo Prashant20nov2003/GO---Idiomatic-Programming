@@ -1,4 +1,4 @@
-module github.com/learning-go-book-2e/simpletax/v2
+module github.com/Prashant20nov2003/simpletax/v2
 
 go 1.19
 

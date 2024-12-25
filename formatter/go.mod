@@ -1,4 +1,4 @@
-module github.com/learning-go-book-2e/formatter
+module github.com/Prashant20nov2003/formatter
 
 go 1.19
 

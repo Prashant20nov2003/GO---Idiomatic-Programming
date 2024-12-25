@@ -1,3 +1,3 @@
-module github.com/learning-go-book-2e/ch06
+module github.com/Prashant20nov2003/ch06
 
 go 1.19

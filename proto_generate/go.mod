@@ -1,4 +1,4 @@
-module github.com/learning-go-book-2e/proto_generate
+module github.com/Prashant20nov2003/proto_generate
 
 go 1.19
 

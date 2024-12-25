@@ -1,4 +1,4 @@
-module github.com/learning-go-book-2e/ch16
+module github.com/Prashant20nov2003/ch16
 
 go 1.20
 

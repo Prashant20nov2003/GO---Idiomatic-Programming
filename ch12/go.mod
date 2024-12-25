@@ -1,3 +1,3 @@
-module github.com/learning-go-book-2e/ch12
+module github.com/Prashant20nov2003/ch12
 
 go 1.21

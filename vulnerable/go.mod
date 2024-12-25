@@ -1,4 +1,4 @@
-module github.com/learning-go-book-2e/vulnerable
+module github.com/Prashant20nov2003/vulnerable
 
 go 1.19
 
