@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/learning-go-book-2e/ch16/sample_code/unexported_field_access/one_package"
-	"github.com/learning-go-book-2e/ch16/sample_code/unexported_field_access/other_package"
+
+	"github.com/Prashant20nov2003/ch16/sample_code/unexported_field_access/one_package"
+	"github.com/Prashant20nov2003/ch16/sample_code/unexported_field_access/other_package"
 )
 
 func main() {

@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/learning-go-book-2e/proto_generate/data"
+
+	"github.com/Prashant20nov2003/proto_generate/data"
 	"google.golang.org/protobuf/proto"
 )
 
-//go:generate protoc -I=. --go_out=. --go_opt=module=github.com/learning-go-book-2e/proto_generate --go_opt=Mperson.proto=github.com/learning-go-book-2e/proto_generate/data person.proto
+//go:generate protoc -I=. --go_out=. --go_opt=module=github.com/Prashant20nov2003/proto_generate --go_opt=Mperson.proto=github.com/Prashant20nov2003/proto_generate/data person.proto
 func main() {
 	p := &data.Person{
 		Name:  "Bob Bobson",

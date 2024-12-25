@@ -1,6 +1,6 @@
 package person
 
-import "github.com/learning-go-book-2e/ch10/sample_code/circular_dependency_example/pet"
+import "github.com/Prashant20nov2003/ch10/sample_code/circular_dependency_example/pet"
 
 type Person struct {
 	Name    string

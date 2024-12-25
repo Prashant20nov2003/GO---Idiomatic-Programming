@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/learning-go-book-2e/simpletax"
+	"github.com/Prashant20nov2003/simpletax"
 	"github.com/shopspring/decimal"
 )
 

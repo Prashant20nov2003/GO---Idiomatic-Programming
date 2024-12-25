@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/learning-go-book-2e/ch10/sample_code/circular_dependency_example/person"
+	"github.com/Prashant20nov2003/ch10/sample_code/circular_dependency_example/person"
 )
 
 func main() {
