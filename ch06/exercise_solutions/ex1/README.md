@@ -1,6 +1,7 @@
 # Exercise 1
 
 ## Question
+
 Create a struct named `Person` with three fields: `FirstName` and `LastName` of type `string` and `Age` of type `int`. Write a function called `MakePerson` that takes in `firstName`, `lastName`, and `age` and returns a `Person`. Write a second function `MakePersonPointer` that takes in `firstName`, `lastName`, and `age` and returns a `*Person`. Call both from `main`. Compile your program with `go build -gcflags="-m"`. This both compiles your code and prints out which values escape to the heap. Are you surprised about what escapes?
 
 ## Solution
@@ -40,9 +41,9 @@ func main() {
 
 Compiling the code with `-gcflags="-m"` shows when values escape to the heap (it also shows when functions are inlined, which is a compiler optimization that's not covered by this book):
 
-````shell
+```shell
 $ go build -gcflags="-m"
-# github.com/learning-go-book-2e/ch06/exercise_solutions/ex1
+# github.com/Prashant20nov2003/ch06/exercise_solutions/ex1
 ./main.go:11:6: can inline MakePerson
 ./main.go:19:6: can inline MakePersonPointer
 ./main.go:28:17: inlining call to MakePerson
@@ -58,8 +59,8 @@ $ go build -gcflags="-m"
 ./main.go:29:14: p escapes to heap
 ./main.go:30:25: &Person{...} escapes to heap
 ./main.go:31:13: ... argument does not escape
-````
+```
 
 The `&Person{}` returned from `MakePersonPointer` escapes to the heap. Any time a pointer is returned from a function, the pointer is returned on the stack, but the value it points to must be stored on the heap.
 
-Surprisingly, it also says that `p` escapes to the heap. The reason for this is that it is passed into `fmt.Println`. This is because the parameter to `fmt.Println` are `...any`. The current Go compiler moves to the heap any value that is passed in to a function via a parameter that is of an interface type. (Interfaces are covered in Chapter 7.) 
+Surprisingly, it also says that `p` escapes to the heap. The reason for this is that it is passed into `fmt.Println`. This is because the parameter to `fmt.Println` are `...any`. The current Go compiler moves to the heap any value that is passed in to a function via a parameter that is of an interface type. (Interfaces are covered in Chapter 7.)
